@@ -1,4 +1,4 @@
-use client";
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -31,7 +31,7 @@ export default function Page() {
             title="Discover Sicily" 
             description="Experience the beauty and culture of Sicily with us."
             imageSrc={assetMap.find(a => a.id === "hero-image")?.url ?? "/public/images/placeholder.webp"} 
-            alt={assetMap.find(a => a.id === "hero-image")?.alt ?? "Decorative image"}
+            imageAlt={assetMap.find(a => a.id === "hero-image")?.alt ?? "Decorative image"}
             buttons={[
               { text: "Explore Tours", href: "about" },
               { text: "Contact Us", href: "contact" }
@@ -47,7 +47,7 @@ export default function Page() {
               { title: "Delicious Cuisine", description: "Indulge in Sicily's unique flavors and aromas." }
             ]}
             imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"} 
-            alt={assetMap.find(a => a.id === "about-image")?.alt ?? "Decorative image"}
+            imageAlt={assetMap.find(a => a.id === "about-image")?.alt ?? "Decorative image"}
           />
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function Page() {
             title="Stay in Touch" 
             description="Subscribe to our newsletter for the latest updates and exclusive offers."
             imageSrc={assetMap.find(a => a.id === "contact-image")?.url ?? "/public/images/placeholder.webp"} 
-            alt={assetMap.find(a => a.id === "contact-image")?.alt ?? "Decorative image"}
+            imageAlt={assetMap.find(a => a.id === "contact-image")?.alt ?? "Decorative image"}
             mediaPosition="right"
             onSubmit={(email) => console.log(email)}
           />
